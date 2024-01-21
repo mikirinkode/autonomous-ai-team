@@ -15,3 +15,4 @@ class Agent:
             messages= self.memories,
             stream=True,
         )
+        return result
