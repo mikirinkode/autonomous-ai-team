@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact Page - Muhammad Wafa Al Ausath</title>
+</head>
+
+<body class="bg-gray-200">
+
+    <section class="py-10">
+        <div class="container mx-auto">
+            <h1 class="text-center text-5xl font-bold mb-5">Contact</h1>
+            <form class="bg-white shadow-lg rounded p-8" action="#">
+                <div class="mb-5">
+                    <label for="name" class="block mb-2">Name</label>
+                    <input name="name" id="name" class="w-full p-3 border border-gray-200 rounded" type="text"
+                        placeholder="Name">
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="block mb-2">Email</label>
+                    <input name="email" id="email" class="w-full p-3 border border-gray-200 rounded" type="email"
+                        placeholder="Email">
+                </div>
+                <div class="mb-5">
+                    <label for="message" class="block mb-2">Message</label>
+                    <textarea name="message" id="message"
+                        class="w-full p-3 border border-gray-200 rounded" placeholder="Message"></textarea>
+                </div>
+                <button type="submit"
+                    class="w-full bg-indigo-600 text-white font-bold text-lg rounded p-3 mt-6">Send</button>
+            </form>
+            <div class="my-10">
+                <h2 class="text-center text-3xl font-bold mb-5">Contact Details</h2>
+                <p class="text-center text-lg">Email: <a href="mailto:email@example.com"
+                        class="underline">email@example.com</a></p>
+                <p class="text-center text-lg">Phone: <a href="tel:123456789"
+                        class="underline">123-456-789</a></p>
+                <h2 class="text-center text-3xl font-bold my-5">Follow on Social Media</h2>
+                <div class="flex justify-center items-center space-x-5">
+                    <a href="#" class="text-3xl">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="text-3xl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-3xl">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-3xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

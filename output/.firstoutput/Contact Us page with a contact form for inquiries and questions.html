@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="bg-gray-100 min-h-screen">
+        <nav class="bg-white shadow">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between h-16">
+                    <div class="flex space-x-4">
+                        <a href="/" class="flex items-center text-gray-900 font-medium">Home</a>
+                        <a href="/about" class="flex items-center text-gray-600 hover:text-gray-900">About</a>
+                        <a href="/services" class="flex items-center text-gray-600 hover:text-gray-900">Services</a>
+                        <a href="/contact" class="flex items-center text-gray-600 hover:text-gray-900">Contact Us</a>
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <a href="/login" class="flex items-center text-gray-600 hover:text-gray-900">Login</a>
+                        <a href="/register"
+                            class="bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded">Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
+            <h1 class="text-3xl font-semibold mb-6">Contact Us</h1>
+            <div class="bg-white rounded shadow py-6 px-8">
+                <form>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm border-gray-300 rounded-md">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm border-gray-300 rounded-md">
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                        <textarea id="message" name="message" rows="4" class="mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full shadow-sm border-gray-300 rounded-md"></textarea>
+                    </div>
+                    <div class="mt-6">
+                        <button type="submit" class="py-2 px-4 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <footer class="bg-gray-800 text-white py-6">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex justify-between">
+                    <p>© 2022 Mikirinkode. All rights reserved.</p>
+                    <div class="flex items-center space-x-4">
+                        <a href="https://facebook.com/mikirinkode" target="_blank" rel="noopener noreferrer">
+                            <svg class="h-6 w-6 fill-current text-white" role="img" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 0C114.61 0 0 114.61 0 256c0 122.51 89.15 223.52 206.04 242.87V329.39h-52.26v-64.25h52.26v-48.58c0-50.97 30.86-79.26 77.16-79.26c22.25 0 47.26 3.97 47.26 3.97v52.03h-26.65c-26.23 0-34.42 16.27-34.42 32.98v39.84h58.57l-9.35 64.25h-49.22v151.45C422.94 479.52 512 378.51 512 256C512 114.61 397.39 0 256 0z" />
+                            </svg>
+                        </a>
+                        <a href="https://twitter.com/mikirinkode" target="_blank" rel="noopener noreferrer">
+                            <svg class="h-6 w-6 fill-current text-white" role="img" viewBox="0 0 512 512">
+                                <path
+                                    d="M157.5 512c189 0 292.5-156.5 292.5-292.5 0-4.5 0-9-0.5-13.5 20-14.5 37.5-33 51.5-54.5-18.5 8-37 13-56 15.5 20.5-12 36-31 43.5-53-19.5 11.5-41 20-63.5 24C413 94 384.5 78.5 352 78.5c-59 0-106.5 47.5-106.5 106.5 0 8.5 1 17 2.5 25C156 181 83 153.5 47.5 103c-13.5 23.5-21 50.5-21 79.5 0 55.5 28.5 104.5 71.5 133C90.5 311.5 68 303 46 291v1.5c0 77.5 55.5 142 128.5 157-13.5 3.5-28 5.5-43 5.5-10.5 0-20.5-1-30.5-3 20.5 64 79.5 110 149.5 111.5-54.5 42.5-123.5 67.5-198.5 67.5-13 0-25.5-0.5-38-2C68 506 96.5 512 125 512" />
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/mikirinkode" target="_blank" rel="noopener noreferrer">
+                            <svg class="h-6 w-6 fill-current text-white" role="img" viewBox="0 0 24 24">
+                                <path
+                                    d="M 12 2 C 6.486 2 2 6.486 2 12 L 2 12 C 2 17.514 6.486 22 12 22 L 12 22 C 17.514 22 22 17.514 22 12 L 22 12 C 22 6.486 17.514 2 12 2 Z M 12 4 C 16.412 4 20 7.588 20 12 C 20 16.412 16.412 20 12 20 C 7.588 20 4 16.412 4 12 C 4 7.588 7.588 4 12 4 Z M 12 6 C 10.346 6 9 7.346 9 9 C 9 10.654 10.346 12 12 12 C 13.654 12 15 10.654 15 9 C 15 7.346 13.654 6 12 6 Z M 12 8 A 2 2 0 0 0 12 12 A 2 2 0 0 0 12 8 Z M 21 14.31 A 8.682 8.682 0 0 0 20.277 11 A 5.057 5.057 0 0 0 21 9 C 21 6.243 18.757 4 16 4 L 8 4 C 5.243 4 3 6.243 3 9 C 3 9.604 3.08 10.218 3.227 10.818 A 8.684 8.684 0 0 0 4 14.31 L 4 19 L 8.365 19 C 9.065 20.59 10.855 22 12 22 C 13.232 22 14.187 21.524 15 20.682 L 15 15 L 9 15 L 9 14 L 15 14 L 15 13 L 9 13 L 6 13 L 6 15 L 8 15 L 8 20 L 16 20 L 16 15.4 A 8.682 8.682 0 0 0 17.723 18.7 A 5.057 5.057 0 0 0 17 19 C 17 21.757 19.243 24 22 24 L 24 24 C 26.757 24 29 21.757 29 19 L 29 14.31 L 21 14.31 Z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
