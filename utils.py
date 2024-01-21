@@ -2,7 +2,8 @@ import os
 
 def create_html_file(file_name, html_content):
     folder_path = 'output'
-    file_path = f'{folder_path}/{file_name}.html'
+    formatted_name = file_name if file_name.endswith('.html') else f'{file_name}.html'
+    file_path = f'{folder_path}/{formatted_name}'
 
     if not os.path.exists(folder_path):
         os.makedirs(folder_path)
