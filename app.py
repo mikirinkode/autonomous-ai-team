@@ -2,16 +2,8 @@ import streamlit as st
 from agent import Agent
 from openai import OpenAI
 from utils import *
+from feature import FeatureStatus
 import json
-
-class FeatureStatus:
-    def __init__(self, feature, html_file_name, status):
-        self.feature = feature
-        self.html_file_name = html_file_name
-        self.status = status
-        
-    def update_status(self, new_status):
-        self.status = new_status
         
 openai_model="gpt-4"
 api_key=st.secrets["OPENAI_API_KEY"]
